@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>User Interaction Testing</title>
+<!-- metadata -->
+<meta name="generator" content="S5" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="201109" />
+<meta name="author" content="Ryan Boucher" />
+<meta name="company" content="ThoughtWorks" />
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+<!-- Google JS -->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<!-- web fonts -->
+<link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'/>
+</head>
+<body>
+
+<div class="layout">
+  <div id="controls"><!-- DO NOT EDIT --></div>
+  <div id="currentSlide"><!-- DO NOT EDIT --></div>
+  <div id="header"></div>
+<!--  <div id="footer"></div>-->
+</div>
+
+
+<div class="presentation">
+  <div class="slide">
+    <h1>USER<br/>INTERACTION<br/>TESTING</h1>
+    <br/>
+    <h3>Ryan Boucher, ThoughtWorks</h3>
+  </div>
+
+  <div class="slide">
+    <p class="giant">?</p>
+  </div>
+
+  <div class="slide">
+    <h1 class="header">What is user interaction testing?</h1>
+  </div>
+
+  <div class="slide">
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization()
+      {
+        // Create and populate the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Task');
+        data.addColumn('number', 'Hours per Day');
+        data.addRows([
+          ['User Interaction',              1],
+          ['Business Domain',               1],
+          ['Performance',                   1],
+          ['Infrastructure & Integration',  1],
+          ['Behaviour & Functionality',     1],
+          ['Security',                      1]
+        ]);
+
+        var options = {
+          width: '100%', height: '550',
+          title: '',
+          backgroundColor: 'black',
+          legend: { textStyle: {color: 'white'}, position: 'none'},
+          pieSliceText: 'label',
+          chartArea: {width: '100%', height: '100%'}
+        };
+
+        // Create and draw the visualization.
+        new google.visualization.PieChart(document.getElementById('visualization')).
+            draw(data, options);
+      }
+    </script>
+    <div id="visualization"></div>
+  </div>
+
+  <div class="slide">
+    <h1>User Interface Testing</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Usability Testing</h1>
+  </div>
+
+  <div class="slide image">
+    <img src="images/nab01.png" alt="" title="" />
+  </div>
+  <div class="slide image">
+    <img src="images/nab02.png" alt="" title="" />
+  </div>
+  <div class="slide image">
+    <img src="images/nab03.png" alt="" title="" />
+  </div>
+
+  <div class="slide image">
+    <img src="images/vs2010.png" alt="" title="" />
+  </div>
+
+  <div class="slide image">
+    <img src="images/di01.png" alt="" title="" />
+  </div>
+
+  <div class="slide image">
+    <img src="images/di02.png" alt="" title="" />
+  </div>
+
+  <div class="slide">
+    <h1>User Experience Testing</h1>
+  </div>
+
+  <div class="slide image">
+    <img src="images/rage.png" alt="" title="" />
+  </div>
+
+  <div class="slide">
+    <h1 class="header">Techniques</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Pluralistic Walkthrough</h1>
+  </div>
+
+  <div class="slide image">
+    <img src="images/usaura.png" alt="" title="" />
+  </div>
+
+  <div class="slide">
+    <h1>Cognitive Walkthrough</h1>
+  </div>
+
+  <div class="slide image">
+    <img src="images/pfb_flow01.png" alt="" title="" />
+  </div>
+
+  <div class="slide image">
+    <img src="images/pfb_flow02.png" alt="" title="" />
+  </div>
+
+  <div class="slide image">
+    <img src="images/pfb_flow03.png" alt="" title="" />
+  </div>
+
+  <div class="slide image">
+    <img src="images/pfb_flow04.png" alt="" title="" />
+  </div>
+
+  <div class="slide image">
+    <img src="images/pfb_flow05.png" alt="" title="" />
+  </div>
+
+  <div class="slide">
+    <h1>Think Aloud</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Hallway Testing</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Heuristic Evaluation</h1>
+  </div>
+
+  <div class="slide">
+    <h1>A/B split testing</h1>
+  </div>
+
+  <div class="slide">
+    <h1>User Testing</h1>
+  </div>
+
+
+
+  <div class="slide">
+    <h1 class="header">Macguffins</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Paper Prototypes / Paper Walkflows</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Wireframes</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Personas</h1>
+  </div>
+
+  <div class="slide">
+    <h1>The UI</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Touchpoints</h1>
+  </div>
+
+
+
+  <div class="slide">
+    <h1 class="header">Lenses</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Accessibility</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Structure</h1>
+  </div>
+
+  <div class="slide image">
+    <img src="images/pfb_flow05.png" alt="" title="" />
+  </div>
+
+  <div class="slide">
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['orgchart']});
+      google.setOnLoadCallback(drawChart);
+
+      function drawChart()
+      {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
+        data.addRows([
+          ['User Home', '', ''],
+          ['Language Overview', 'User Home', ''],
+          ['Set Overview', 'Language Overview', ''],
+          ['Review Term', 'Set Overview', ''],
+          ['Record Review', 'Review Term', '']
+        ]);
+
+        var options = {
+          size: 'large',
+          nodeClass: 'org-chart-node'
+        };
+
+        var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <div id='chart_div'></div>
+  </div>
+
+  <div class="slide">
+    <h1>Consistency</h1>
+  </div>
+
+  <div class="slide image">
+    <img src="images/sensis01.png" alt="" title="" />
+  </div>
+
+  <div class="slide image">
+    <img src="images/sensis02.png" alt="" title="" />
+  </div>
+
+  <div class="slide">
+    <h1>IL8N & L10N</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Training & Help</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Trustworthiness</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Usability</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Visibility</h1>
+  </div>
+
+  <div class="slide image">
+    <img src="images/rage.png" alt="" title="" />
+  </div>
+
+  <div class="slide">
+    <h1>Personalisation & Localisation</h1>
+  </div>
+
+  <div class="slide image">
+    <img src="images/iphone.png" alt="" title="" />
+  </div>
+
+  <div class="slide">
+    <h1 class="final">Ryan Boucher</h1>
+    <h1 class="company">ThoughtWorks</h1>
+    <h3 class="refs">distributedlife.com</h3>
+    <h3 class="refs">cromulent-testing.com</h3>
+    <h3 class="refs">twitter.com/distributedlife</h3>
+  </div>
+</div>
+
+</body>
+</html>
