@@ -12,3 +12,7 @@ end
 get '/' do
   File.read('user_interaction_testing/index.html')
 end
+
+get '/user_interaction_testing/:file' do
+  return File.open("user_interaction_testing/#{params[:file]}")
+end
