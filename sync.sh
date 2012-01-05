@@ -1,11 +1,10 @@
 #!/bin/bash
 HOST="distributedlife.com"
 USER="distribu"
-PASS="@#k2Eht\`7j"
+PASS='@#k2Eht`7j'
 LCD="/media/extended/slides"
 RCD="/public_html/slides"
-lftp -c "set ftp:list-options -a;
-open ftp://$USER:$PASS@$HOST;
+lftp -c "open ftp://$USER:$PASS@$HOST;
 lcd $LCD;
 cd $RCD;
 mirror --reverse \
