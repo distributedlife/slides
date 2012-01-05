@@ -10,5 +10,5 @@ before do
 end
 
 get '/' do
-  File.read('index.html')
+  File.read('user_interaction_testing/index.html')
 end
