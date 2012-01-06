@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 
-set :public, Proc.new { File.join(root, "_site") }
+set :public, Proc.new { root }
 
 # This before filter ensures that your pages are only ever served 
 # once (per deploy) by Sinatra, and then by Varnish after that
@@ -13,14 +13,6 @@ get '/' do
   File.read('user_interaction_testing/index.html')
 end
 
-#get '/user_interaction_testing' do
-#  File.read('user_interaction_testing/index.html')
-#end
-
-get '/:path' do
-  File.read("/#{params[:path]}")
+get '/user_interaction_testing/' do
+  File.read('user_interaction_testing/index.html')
 end
-
-#get '/user_interaction_testing/:file' do
-#  return File.read("/user_interaction_testing/#{params[:file]}")
-#end
