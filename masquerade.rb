@@ -18,7 +18,7 @@ end
 #end
 
 get '/:path' do
-  return File.read("/#{params[:path]}")
+  File.read("/#{params[:path]}")
 end
 
 #get '/user_interaction_testing/:file' do
