@@ -111,7 +111,6 @@ img.incremental {visibility: hidden;}
   width: 100%;
   text-align: center;
 }
-.image img {width: 75%}
 
 .org-chart-node {border: 1px dotted white !important; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;}
 
