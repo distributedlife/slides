@@ -16,3 +16,7 @@ end
 get '/user_interaction_testing/' do
   File.read('user_interaction_testing/index.html')
 end
+
+get '/soap_box_early_2012/' do
+  File.read('soap_box_early_2012/index.html')
+end
