@@ -128,6 +128,8 @@ img.white {background: white;}
 .org-chart-node {border: 1px dotted white !important; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;}
 
 p.author {color: orange;}
+p.highlight {color: orange; }
+p.tight {line-height: 1.0em; padding-top: 0; padding-bottom: 0;}
 
 /* diagnostics
 
