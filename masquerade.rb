@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'sinatra'
-
+require 'haml'
 set :public, Proc.new { root }
 
 # This before filter ensures that your pages are only ever served 
@@ -18,5 +18,5 @@ get '/user_interaction_testing/' do
 end
 
 get '/soap_box_early_2012/' do
-  File.read('soap_box_early_2012/index.html')
+  haml File.read('soap_box_early_2012/index.haml')
 end

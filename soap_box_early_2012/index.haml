@@ -1,0 +1,342 @@
+!!! html
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title on my soap box, early 2012
+
+<!-- metadata -->
+%meta{:name => "generator", :content => "S5"}
+%meta{:name => "version", :content => "S5 1.1"}
+%meta{:name => "presdate", :content => "201204"}
+%meta{:name => "author", :content => "Ryan Boucher"}
+%meta{:name => "company", :content => "ThoughtWorks"}
+
+<!-- configuration parameters -->
+%meta{:name => "defaultView", :content => "slideshow"}
+%meta{:name => "controlVis", :content => "hidden"}
+
+<!-- style sheet links -->
+%link{:rel => "stylesheet", :href => "ui/default/slides.css", :type =>"text/css", :media => "projection", :id => "slideProj"}
+%link{:rel => "stylesheet", :href => "ui/default/outline.css", :type => "text/css", :media => "screen", :id => "outlineStyle"}
+%link{:rel => "stylesheet", :href => "ui/default/print.css", :type => "text/css", :media => "print", :id => "slidePrint"}
+%link{:rel => "stylesheet", :href => "ui/default/opera.css", :type => "text/css", :media => "projection", :id => "operaFix"}
+
+<!-- S5 JS -->
+%script{:src => "ui/default/slides.js", :type => "text/javascript"}
+
+<!-- Google JS -->
+%script{:type => "text/javascript", :src => "https://www.google.com/jsapi"}
+
+%script{:type => "text/javascript", :src => "js/jquery-1.7.2.min.js"}
+  
+%script{:type => "text/javascript", :src => "js/jquery.flot.js"}
+  
+%script{:type => "text/javascript", :src => "js/probability.js"}
+
+<!-- web fonts -->
+%link{:href => 'http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise', :rel => 'stylesheet', :type => 'text/css'}
+
+%body
+  .layout
+    #controls
+      <!-- DO NOT EDIT -->
+    #currentSlide
+      <!-- DO NOT EDIT -->
+    #header
+
+  .presentation
+    .slide
+      %h1
+        on my soapbox
+        early 2012
+      %h3 Ryan Boucher, ThoughtWorks
+    .slide
+      %h1.centre this presentation contains adult themes, coarse language and concepts that may disturb some viewers
+    .slide
+      %p.giant ?
+    .slide
+      %h1.header on asymptotes and absolutes
+    .slide.image
+      %img{:src => "images/hyperbola_one_over_x.svg", :class => "half white"}
+      %p http://en.wikipedia.org/wiki/File:Hyperbola_one_over_x.svg
+    .slide.image
+      %img{:src => "images/hyperbola_one_over_x_cropped.png", :class => "half white"}
+    .slide.image
+      %img{:src => "images/hyperbola_one_over_x_cropped_qtp.png", :class => "half white"}
+    .slide
+      %h1.header on every team being different
+    .slide
+      %h1.header on quality
+    .slide.image
+      %img{:src => "images/the_triad_constraints.jpg", :class => "half white"}
+      %p http://upload.wikimedia.org/wikipedia/commons/a/a6/The_triad_constraints.jpg
+    .slide.image
+      %img{:src => "images/pm_diamondmodel.jpg", :class => "half white"}
+      %p http://upload.wikimedia.org/wikipedia/commons/9/92/PM_DiamondModel.jpg
+    .slide.image
+      %img{:src => "images/tripleconstraint.jpg", :class => "half white"}
+      %p http://upload.wikimedia.org/wikipedia/en/e/e8/TripleConstraint.jpg
+    .slide.image
+      %img{:src => "images/pm_trianglemodel_suggestion.JPG", :class => "half white"}
+      %p http://upload.wikimedia.org/wikipedia/commons/6/66/PM_TriangleModel_suggestion.JPG
+    .slide.image
+      %img{:src => "images/pm_starmodel_suggested.jpg", :class => "half white"}
+      %p http://upload.wikimedia.org/wikipedia/commons/2/2c/PM_StarModel_suggested.jpg
+    .slide.image
+      %img{:src => "images/the_triad_constraints.jpg", :class => "half white"}
+      %p http://upload.wikimedia.org/wikipedia/commons/a/a6/The_triad_constraints.jpg
+    .slide.image
+      %img{:src => "images/Ford_assembly_line_-_1913.jpg", :class => "half white"}
+      %p http://en.wikipedia.org/wiki/File:Ford_assembly_line_-_1913.jpg
+    .slide
+      %h1.header on bugs and bug trackers
+    .slide
+      %h1.centre keeping a database of bugs is one of the hallmarks of a good software team.
+      %p.author Joel Spolsky - Joel on Software
+    .slide
+      %h1.centre huge FOREVER!
+    .slide
+      %h1 done vs. not done
+    .slide.image
+      %img{:src => "images/splitting_stories.png", :class => "half"}
+    .slide
+      %h1.header on business as usual
+    .slide
+      %h1.header on non-functional requirements
+    .slide
+      %h2.centre sit down if you didn't include one of these terms
+      %ul
+        %li.incremental  performance
+        %li.incremental  capacity (load- spike and endurance as well as volume)
+        %li.incremental  usability
+        %li.incremental  penetration
+        %li.incremental  reliability
+        %li.incremental  scalability
+        %li.incremental  stress
+        %li.incremental  auditing
+        %li.incremental  accessibility
+        %li.incremental  compliance
+        %li.incremental  backup &amp; recovery
+        %li.incremental  deployment
+        %li.incremental  disaster recovery
+    .slide
+      %h2.centre sit down if you didn't include one of these terms
+      %ul
+        %li.incremental  failover
+        %li.incremental  instrumentation
+        %li.incremental  robustness
+        %li.incremental  internationalisation and localisation
+        %li.incremental  training &amp; help
+        %li.incremental  trustworthiness
+        %li.incremental  visibility
+        %li.incremental  user experience
+        %li.incremental  non-repudiation
+        %li.incremental  authorisation
+        %li.incremental  authentication
+        %li.incremental  interoperability
+        %li.incremental  data integrity
+    .slide
+      %h1.header on story walls
+    .slide
+      %h1 excessive use of columns
+    .slide.image
+      %img{:src => "images/story_wall.png"}
+    .slide.image
+      %img{:src => "images/story_wall_reduced.png"}
+      %p ready for dev marked
+    .slide
+      %h1 directional walls
+    .slide.image
+      %img{:src => "images/bi_directional_wall.png"}
+      %p where is the problem?
+.slide.image
+  %img{:src => "images/one_way_wall.png"}
+  %p where is the problem?
+.slide
+  %h1 a blocked row
+.slide.image
+  %img{:src => "images/blocked_row.png"}
+.slide
+  %h1.header on testing gatekeepers
+.slide.image
+  %img{:src => "images/rick_moranis.jpg", :style => "width: 75%; max-height: 75%;"}
+  %p http://www.starfetch.com/keywords/Rick_Moranis/Rick_Moranis_4.jpg
+.slide
+  %h1.header on gamification
+.slide.image
+  %img{:src => "images/progress_bar.png"}
+  %p best. game. ever.
+.slide
+  %h1.centre A game is destined to become boring, automated, cheated and exploited.
+  %p.author Raph Koster - A theory of fun
+.slide
+  %h1.centre REMA model
+  %ul
+    %li Rollercoaster - uncharted 3
+    %li Experiment - civilization
+    %li Mastery - chess
+    %li Application - creature creating in spore
+.slide
+  %h1.header on design
+.slide
+  %h1 what is design?
+.slide
+  %h1 do design decisions expire?
+.slide
+  %h1 who designed this?
+.slide
+  %h1 ethics of teaching design
+.slide
+  %h1.header on user expectations
+.slide
+  %h1.header on testing as a new user
+.slide
+  %h1.header on communication
+.slide.image
+  %img{:src => "images/lossy_transformation.png"}
+    %p how information is lost
+.slide.image
+  %img{:src => "images/perception_over_time.png"}
+.slide
+  %h1.header on determinism in humans
+.slide
+  %h1.header on specialists and generalists
+.slide
+  %p.quote "Maybe knowledge is too great and maybe men are growing too small," Said lee. "Maybe, kneeling down to atoms, they're becoming atom-sized in their souls. Maybe a specialist is only a coward, afraid to look out his own little cage. And to think what a specialist misses-- the whole world over his fence.
+  %p.author Join Steinbeck - East of Eden
+.slide
+  %p.quote Learning music changes music. Learning about wine changes wine. Learning about Buddhism changes Buddhism. And learning Excel changes Excel.
+  %p.quote What the music expert hears has more notes, more instruments, more syncopation... than what I hear when I listen to the same piece. Of course I don't mean the music technically changes, but if the way we experience it shifts, it is AS IF the music itself shifts.
+  %p.author Kathy Sierra - http://bit.ly/IjxpdV
+.slide
+  %h1.header on performance tuning
+.slide
+  %h1 don't do work
+.slide
+  %h1 do work in advance
+.slide
+  %h1 have more workers
+.slide
+  %h1 have better workers
+.slide
+  %h1 be more efficient
+.slide
+  %h1.header on testers, some advice
+.slide
+  %ul
+    %li.incremental  help the analysts challenge assumptions; it's a hard job they have
+    %li.incremental  share your knowledge of testing with the developersi; it's a hard job they have
+    %li.incremental  help the uxers to design; it's a hard job they have
+    %li.incremental  encourage good testing practices
+    %li.incremental  let the developers write test automation
+    %li.incremental  prefer disposable automation when you must write code
+    %li.incremental  prefer exploratory testing over scripted testing
+    %li.incremental  prefer throw away documentation over formalised documentation
+    %li.incremental  when you're not testing you're not testing
+    %li.incremental  be passionate
+    %li.incremental  practice self care
+.slide
+  %h1.header on usability for all
+.slide
+  %h1.header on adding purpose to tests
+.slide
+  %p.tight GIVEN we have a 110 amount
+  %p.tight WHEN we post the amount
+  %p.tight THEN we debit 110 from the customer account
+  %p.tight AND we credit 10 into the GST account
+  %p.tight AND we credit 100 into the receivables account
+.slide
+  %p.tight GIVEN we have a 110 amount
+  %p.tight WHEN we post the amount
+  %p.tight THEN we debit 110 from the customer account
+  %p.tight AND we credit 10 into the GST account
+  %p.tight AND we credit 100 into the receivables account
+  %p.tight highlight BECAUSE it's the law
+.slide
+  %h1.header on black box testing
+.slide
+  %h1.header on naming environments
+.slide
+  %h2.centre stoopid names
+  %ul
+    %li local
+    %li dev
+    %li dev-int
+    %li test
+    %li test-int
+    %li performance
+    %li qa
+    %li staging
+    %li customer-staging
+    %li user acceptance test
+    %li function test
+    %li enterprise test
+    %li system test
+    %li end 2 end test
+.slide
+  %h2.centre sensible names
+  %ul
+    %li local
+    %li exploratory
+    %li performance
+    %li production
+.slide
+  %h1.header on velocityraptors
+.slide
+  %h2.centre if you pressure testers on when testing will be done
+.slide.image
+  %img{:src => "images/philosoraptor.jpeg"}
+    %p http://bit.ly/dI4Tq3
+.slide
+  %h2.centre want to count the points after 'dev-complete' rather than done
+.slide.image
+  %img{:src => "images/philosoraptor.jpeg"}
+    %p http://bit.ly/dI4Tq3
+.slide
+  %h2.centre If you pull out integration testing out into zero point cards
+.slide.image
+  %img{:src => "images/philosoraptor.jpeg"}
+    %p http://bit.ly/dI4Tq3
+.slide
+  %h2.centre refuse to prioritise tech debt or bugs
+.slide.image
+  %img{:src => "images/philosoraptor.jpeg"}
+    %p http://bit.ly/dI4Tq3
+.slide
+  %h2.centre refuse to do the right thing because it might initially impact your velocity
+.slide.image
+  %img{:src => "images/philosoraptor.jpeg"}
+    %p http://bit.ly/dI4Tq3
+.slide
+  %h1.header on the future
+.slide
+  %h1 near future
+.slide.image
+  #normal_variance{:style => "margin-left:auto; margin-right:auto;width:800px;height:500px;"}
+  :javascript
+    $(function () {
+      var d1 = [];
+      for (var i = -5; i < 5.1; i += 0.1)
+        d1.push([i, NormalDensityZx(i,0,1.2)]);
+
+      $.plot($("#normal_variance"), [ d1 ], {yaxis: {show:false}, xaxis: {show:false}});
+    });
+.slide.image
+  #wide_variance{:style => "margin-left:auto; margin-right:auto;width:800px;height:500px;"}
+  :javascript
+    $(function () {
+      var d1 = [];
+      for (var i = -5; i < 5.1; i += 0.1)
+        d1.push([i, NormalDensityZx(i,0,2.2)]);
+
+      $.plot($("#wide_variance"), [ d1 ], {yaxis: {show:false}, xaxis: {show:false}});
+    });
+.slide
+  %h1.centre learn.cromulent-testing.com
+.slide
+  %h1 far future
+.slide
+  %h1.final Ryan Boucher
+  %h1.company ThoughtWorks
+  %h3.refs distributedlife.com
+  %h3.refs cromulent-testing.com
+  %h3.refs twitter.com/distributedlife
