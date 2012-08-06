@@ -1,0 +1,299 @@
+!!! html
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title JavaScript is the future of gaming
+
+<!-- metadata -->
+%meta{:name => "generator", :content => "S5"}
+%meta{:name => "version", :content => "S5 1.1"}
+%meta{:name => "presdate", :content => "201204"}
+%meta{:name => "author", :content => "Ryan Boucher"}
+%meta{:name => "company", :content => "ThoughtWorks"}
+
+<!-- configuration parameters -->
+%meta{:name => "defaultView", :content => "slideshow"}
+%meta{:name => "controlVis", :content => "hidden"}
+
+<!-- style sheet links -->
+%link{:rel => "stylesheet", :href => "ui/default/slides.css", :type =>"text/css", :media => "projection", :id => "slideProj"}
+%link{:rel => "stylesheet", :href => "ui/default/outline.css", :type => "text/css", :media => "screen", :id => "outlineStyle"}
+%link{:rel => "stylesheet", :href => "ui/default/print.css", :type => "text/css", :media => "print", :id => "slidePrint"}
+%link{:rel => "stylesheet", :href => "ui/default/opera.css", :type => "text/css", :media => "projection", :id => "operaFix"}
+
+<!-- S5 JS -->
+%script{:src => "ui/default/slides.js", :type => "text/javascript"}
+
+<!-- Google JS -->
+%script{:type => "text/javascript", :src => "https://www.google.com/jsapi"}
+
+%script{:type => "text/javascript", :src => "js/jquery-1.7.2.min.js"}
+  
+%script{:type => "text/javascript", :src => "js/jquery.flot.js"}
+  
+%script{:type => "text/javascript", :src => "js/probability.js"}
+
+<!-- web fonts -->
+%link{:href => 'http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise', :rel => 'stylesheet', :type => 'text/css'}
+
+%body
+  .layout
+    #controls
+      <!-- DO NOT EDIT -->
+    #currentSlide
+      <!-- DO NOT EDIT -->
+    #header
+
+  .presentation
+    .slide
+      %h1
+        JavaScript is the future of gaming
+      %h3 Ryan Boucher, ThoughtWorks
+      .handout
+        %p
+          My difficult to disprove claim is that Javascript has all of those things and in some cases it’s better than traditional gaming environments.
+        %p
+          And a reference to John Carmack.
+
+    .slide
+      %h1.header Who am I?
+      .handout
+        %p
+          Gamedev Experience
+          %ul
+            %li Had my own gamedev startup
+            %li Spent most of the last decade failing to make a couple of games
+            %li All that work was done in C/C++/Cg
+            %li These days at ThoughtWorks playing with ruby or java
+        %p
+          JavaScript Experience
+          %ul
+            %li About 3 months excluding use of getElementById
+
+    .slide
+      %h1.header So what do we need?
+      %ul
+        %li.incremental OpenGL or Direct X (shaders)
+        %li.incremental A rendering engine
+        %li.incremental Sound effects and music
+        %li.incremental Controllers and Gamepad support
+        %li.incremental Physics Engine
+        %li.incremental Particle Engine
+        %li.incremental 2D Overlays
+        %li.incremental AI
+        %li.incremental Networking Code
+        %li.incremental Video Playback (for padding in AAA titles)
+    .slide
+      %h1.header What else what do we need?
+      %ul
+        %li.incremental Performance
+        %li.incremental Resource Loading
+        %li.incremental Good language support
+        %li.incremental Good testing support
+        %li.incremental Console support
+        %li.incremental Platform Support
+        %li.incremental Community
+        %li.incremental User identifiction / authorisation
+        %li.incremental Persistence
+        %li.incremental Scalability
+        %li.incremental Metrics Gathering
+
+
+    .slide
+      %h1.header How is JS going on all this?
+    .slide
+      %h1 Winning
+    .slide
+      %h1 2D Overlays
+      %ul
+        %li.incremental Implementing a UI layer using OpenGL sucks
+        %li.incremental Implementing fonts using OpenGL is hard work
+        %li.incremental Some games bring in Mozilla’s HTML engine
+        %li.incremental Why not just use HTML5
+        %li.incremental Compositing (mixed HTML5 w/ canvas) is awesome.
+      .handout
+        %p Javasript Kicks arse here
+        %p
+          You can have multiple WebGL canvas elements and multiple HTML5 elements all receiving 
+          updates from your domain model. You can also mix ajax in with this so you have mix 
+          modes of updating based on priority.
+    .slide
+      %h1 Good language support
+      %ul
+        %li.incremental good library support
+        %li.incremental event driven is easy
+        %li.incremental multiple programming paradigms
+        %li.incremental fewer moving parts
+      .handout
+        %p JS has this in spades over C/C++
+        %p good library support - it's easy to bring in just the bits you need
+        %p event driven is easy - most games need this in some way
+        %p multiple programming paradigms - OO or functional
+        %p fewer moving parts - most game engines have a scripting language like lua
+    .slide
+      %h1 Good testing support
+      %ul
+        %li.incremental Oh the humanity
+        %li.incremental 172 assertions in 0.017 seconds
+      .handout
+        %p
+          Ach mein eyes! CxxTest was, back when I was working on C/C++ code, the best in testing 
+          support. It’s a perl script that wraps your test code so it can build a binary to run.
+    .slide
+      %h1 Community
+      %ul
+        %li.incremental According to meetup there are no C or C++ usergroups with 25 miles of Australia
+        %li.incremental More of a culture of building shared assets.
+    .slide
+      %h1 Video Playback
+
+
+    .slide
+      %h1 Easy
+      %ul
+        %li Rendering engine
+        %li Physics Engine
+        %li Particle Engine
+        %li AI
+        %li User identifiction / authorisation
+        %li Persistence
+        %li Scalability
+        %li Metrics Gathering
+
+
+    .slide
+      %h1 Getting Better
+    .slide
+      %h1 WebGL
+      %ul
+        %li Everywhere but IE and iOS
+        %li Limited npot support
+    .slide
+      %h1 Sound effects and music
+      %ul
+        %li HTML5 - lovely for the basic 2D positional, soundtrack
+        %li Web Audio API - loop, 3D positional, filters and effects
+    .slide
+      %h1 Controllers and Gamepad support
+      %ul
+        %li Gamepad API
+        %li Gamepad.js
+        %li Windows and Linux (some OSX)
+        %li Chromium and Firefox
+      .handout
+        %p Just like desktop games. Apple not really behind gaming.
+    .slide
+      %h1 Platform Support
+      %ul
+        %li Multiple O/S Support is hard
+        %li It's already on the browser
+        %li No need for plugins
+        %li No need for native binaries
+      .handout
+        %p
+          Different operating systems have different languages. Different browsers
+          is that level easier. 5 Browsers is probably easier than 3 Operating Systems
+        %p Also the reason why most games are on windows. It's easier
+        %p Peripheral support will take the longest as you need driver, OS and Browser support
+
+
+    .slide
+      %h1 Still hard
+    .slide
+      %h1 Performance
+      %ul
+        %li.incremental JS will never be as fast as code authored for a particular CPU
+        %li.incremental Does it need to be? Hardware improvements are real.
+        %li.incremental Easier to test / code vs. more performant.
+        %li.incremental Garbage Collection is to be considered.
+        %li.incremental We are getting there and for most games JS is fast enough.
+        %li.incremental If not, V8 Engine compiles to native; could be enough of a boost
+      .handout
+        %p https://github.com/toji/gl-matrix
+        %p Some people have started building high performance math libraries for gaming in JS
+        %p Most of the work is done trying to organise data so it can be shipped to GPU quickly
+    .slide
+      %h1 Console support
+      %ul
+        %li.incremental Buy Hardware (CPU, GPU, RAM, Controller)
+        %li.incremental Install Chromium OS
+        %li.incremental Make good use of JS
+        %li.incremental DIY Console FTW
+    .slide
+      %h1 Resource Loading
+      %ul
+        %li.incremental Browser instability when dealing with 4MB fonts.
+        %li.incremental A 5GB game. What’s a good model for downloading and accessing local resources.
+        %li.incremental Perhaps a local node server that delivers resources?
+        %li.incremental How do we work with users who have 50+ tabs open and one of them is a game?
+        %li.incremental The Quake 4 HTML5 work surprised me.
+        %li.incremental What good library support is there for this?
+    .slide
+      %h1 Networking Code
+      %ul
+        %li.incremental WebSockets was a good start
+        %li.incremental Still based on TCP
+        %li.incremental Some types of games really need good UDP support
+
+
+    .slide
+      %h1.header So why don't we use JS?
+    .slide
+      %h1 Perceptions
+      %p.quote offensively wrong on some levels
+      %p.author John Carmack - QuakeCon 2012
+      .handout
+        %p
+          John Carmack probably should have prefixed that JavaScript is not the ideal place to build a game engine
+          But we are not hear to make a game engine. Photorealism in games is neither a requirement nor a necessary goal
+          and maximum geometry throughput is not a core game mechanic
+        %p http://www.youtube.com/watch?v=ozxRRPJzZ78
+        %p Also turboenz engine built a Quake 4 level entirely in JS - http://www.youtube.com/watch?v=AJg_BmY9-8o
+      %h1 Gamer Perceptions
+      .handout
+        %p
+          Fullscreen, gamepad driven gaming is not the norm. Sites like Kongregate has tens of thousands of webgames
+          and just as many players. But it's not what I think of when it comes to Gaming.
+    .slide
+      %h1 Maturity
+      .handout
+        %p These technologies are only new
+        %p JavaScript is reliant on hardware to deliver performance
+        %p JavaScript is reliant on browsers and operating systems
+    .slide
+      %h1 Legacy
+      .handout
+        %p There are many engines out there written in in C/C++
+        %p Some of those engines have customers who are not necessarily read for the switch to JS
+        %p The perception that performance is the most important aspect of gaming. It is important
+        %p But not enough to make me go back to writing C and C++
+
+
+    .slide
+      %h1.header What do we need to do?
+      %ul
+        %li.incremental Keep working on sound, gamepads and WebGL
+        %li.incremental Solve the hard problems (who wants to help me debug the osx gamepad driver)
+        %li.incremental Start with JS when making a game
+        %li.incremental Change perceptions around web based gaming (i.e. implement fullscreen)
+        %li.incremental Package it like a game.
+      .handout
+        %p 
+          Working on means working with browser vendors and standards peeps in order
+          for them to know what we need.
+        %p
+          We also need to hit the limits of what Javascript can do now (without compromising on game design)
+
+
+    .slide
+      %h1.header What next?
+      %p.quote to know your future, you must know your past
+      %p.author Margert Jang
+
+
+    .slide
+      %h1.final Ryan Boucher
+      %h1.company ThoughtWorks
+      %h2.refs distributedlife.com
+      %h2.refs cromulent-testing.com
+      %h2.refs twitter.com/distributedlife
+      %h2.refs github.com/distributedlife

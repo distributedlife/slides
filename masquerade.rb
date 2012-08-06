@@ -20,3 +20,7 @@ end
 get '/soap_box_early_2012/' do
   haml File.read('soap_box_early_2012/index.haml')
 end
+
+get '/js_is_the_future_of_gaming/' do
+  haml File.read('js_is_the_future_of_gaming/index.haml')
+end
